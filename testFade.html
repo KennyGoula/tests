@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Page type</title>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 1000px;
+    }
+
+    .fade1 {
+      position: absolute;
+      top: 100;
+      left: 0;
+    }
+
+    .fade2 .fade3 .fade4 {
+      position: absolute;
+      top: 100;
+      left: 0;
+      display: none;
+    }
+
+    button {
+      position: fixed;
+    }
+  </style>
+  <script>
+    $(document).ready(function () {
+      var i = 1;
+      $('button').click(function () {
+        i++;
+        $('.fade' + i + '').fadeIn(3000);
+      });
+    });
+  </script>
+
+
+</head>
+
+<body>
+
+  <div class="fade1">
+    <img src="images/mainBackground.jpg" width="100%" height="100%" />
+  </div>
+  <div class="fade2">
+    <img src="images/avengersSlide3.jpg" width="100%" height="100%" />
+  </div>
+  <div class="fade3">
+    <img src="images/avengersSlide1.jpg" width="100%" height="100%" />
+  </div>
+  <div class="fade4">
+    <img src="images/avengersSlide2.jpg" width="100%" height="100%" />
+  </div>
+
+  <button>boutton</button>
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../images/mainBG.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'American Typewriter'
+}
+/* --------------------------------------------------Navbar------------------------------------------------------------------- */
+#nav {
+    margin: 0;
+    padding: 0;
+    width: 60vw;
+    height: 100vh;
+    list-style: none;
+    left: -17vw;
+}
+
+#nav1,
+#nav2,
+#nav3,
+#nav4,
+#nav5,
+#nav6 {
+    margin: 0.3vw;
+    padding: 0;
+    width: 85vw;
+    height: 18.2vh;
+    background-repeat: no-repeat;
+}
+
+#nav1 {
+    background-image: url(../images/navBar1.png);
+}
+
+#nav2 {
+    background-image: url(../images/navBar2.png);
+}
+
+#nav3 {
+    background-image: url(../images/navBar3.png);
+}
+
+#nav4 {
+    background-image: url(../images/navBar4.png);
+}
+
+#nav5 {
+    background-image: url(../images/navBar5.png);
+}
+
+#nav6 {
+    background-image: url(../images/navBar6.png);
+}
+
+
+ul {
+    position: absolute;
+
+}
+li{
+    position: initial;
+    width: 4000vw;
+}
+
+li p {
+    font-size: 8vh;
+    padding-top: 8vh;
+    padding-left: 18vw;
+    padding-bottom: 0px;
+    margin: 0;
+}
+/* ----------------------------------------------------------------------Contenus onglets---------------------------------------------------------------------- */
+
+#content {
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border-left: 19.5vw solid transparent;
+    border-right: 52vw solid rgba(185, 184, 184, 0.7);
+    border-top: 54vw solid rgba(185, 184, 184, 0.7);
+    margin-left: 25vw;
+    margin-top: 2.5vh;
+}
+
+#contentInfos{
+    width:52vw;
+    height: 52vw;
+    position: absolute;
+    right: 0;
+    text-align: right;
+    font-size: 5vh;
+    margin-right: 4vw;
+    margin-top: 3vh;
+    transform: translateX(1000px);
+}

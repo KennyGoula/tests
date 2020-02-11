@@ -1,0 +1,37 @@
+{
+    "hero": [{
+            "nom": "Iron Man",
+            "abilites": "Milliardiare",
+            "symbole": "Armure"
+        },
+        {
+            "nom": "Captain America",
+            "abilites": "Serum de Super Soldat",
+            "symbole": "Bouclier"
+        }
+        ,
+        {
+            "nom": "Thor",
+            "abilites": "Dieu de la foudre",
+            "symbole": "Marteau"
+        }
+        ,
+        {
+            "nom": "Hulk",
+            "abilites": "Exposition aux rayons gamma",
+            "symbole": "Peau verte"
+        }
+        ,
+        {
+            "nom": "Black Widow",
+            "abilites": "Espionne sûr-entrainée",
+            "symbole": "Batons electriques"
+        }
+        ,
+        {
+            "nom": "Hawkeye",
+            "abilites": "Precision au tir a l'arc inégalable",
+            "symbole": "Arc et fleches"
+        }
+    ]
+}

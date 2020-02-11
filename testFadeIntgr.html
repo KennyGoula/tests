@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Page type</title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+    <style>
+        .fade {
+            position: absolute;
+            top: 100px;
+            left: 100px;
+        }
+
+        .fade div {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: none;
+        }
+    </style>
+    <script>
+        // when the DOM is ready:
+        $(document).ready(function () {
+            $('div.fade').hover(function () {
+                    // on hovering over, find the element we want to fade *up*
+                    var fade = $('> div', this);
+
+                    // if the element is currently being animated (to a fadeOut)...
+                    if (fade.is(':animated')) {
+                        // ...take it's current opacity back up to 1
+                        fade.stop().fadeTo(300, 1);
+                    } else {
+                        // fade in quickly
+                        fade.fadeIn(250);
+                    }
+                },
+                function () {
+                    // on hovering out, fade the element out
+                    var fade = $('> div', this);
+                    if (fade.is(':animated')) {
+                        fade.stop().fadeTo(300, 0);
+                    } else {
+                        // fade away slowly
+                        fade.fadeOut(300);
+                    }
+                });
+        });
+    </script>
+
+
+</head>
+
+<body>
+
+    <div class="fade">
+        <a href="/info.html"><img src="images/mainBackground.jpg" width="100%" height="100%" /></a>
+        <div>
+            <a href="/info.html"><img src="images/interieurTorchlight.jpg" width="100%" height="100%" /></a>
+        </div>
+    </div>
+
+    <button>boutton</button>
+</body>
+
+</html>

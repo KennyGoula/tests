@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/testBlurEffect.css" />
+    <script src="js/testBlurEffect.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#fl').bind('touchmove', function (e) {
+                e.preventDefault();
+
+                var touch = e.originalEvent.touches[0] || e.originalEvent.changedTouches[0];
+                console.log(touch.pageX);
+            });
+
+            $(document).mousemove(function (e) {
+                $("#fl").css({
+                    top: (e.pageY - 2500) + "px",
+                    left: (e.pageX - 2500) + "px"
+                });
+            });
+        });
+    </script>
+</head>
+
+<body onload="draw();">
+    <div class="fl" id="fl"></div>
+    <img src="images/interieurTorchlight.jpg"></img>
+    <a href="unePage.html"><img src="images/cadre.png" class="cadre"></a>
+    <button onclick="test();">test</button>
+    <canvas id="tutorial"></canvas>
+</body>
+
+</html>
